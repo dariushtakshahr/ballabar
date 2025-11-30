@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="i1mUdewwDKhXmAM_KuWHr5z_xU9M9Ja4Ce7kGJ50pCw" />
-    <title>شرکت بالابر داریوش اصفهان | اجاره بالابر 15، 16، 17 متری</title>
-<meta name="description" content="شرکت بالابر داریوش - اجاره بالابر در اصفهان و حومه ✅ بالابر 15 متری ✅ بالابر 16 متری ✅ بالابر 17 متری 📞 09131073110">
+    
+    <!-- متا تگ‌های سئو -->
+    <title>بالابر داریوش اصفهان | اجاره بالابر 15، 16، 17 متری | شرکت بالابر داریوش</title>
+    <meta name="description" content="شرکت بالابر داریوش اصفهان ✅ اجاره بالابر 15 متری، 16 متری، 17 متری در اصفهان و حومه 📞 09131073110 - 09902211659 ✉️ خدمات 24 ساعته بالابر برای ساختمان، صنعت و نماکاری">
+    <meta name="keywords" content="بالابر داریوش, بالابر اصفهان, اجاره بالابر, بالابر 15 متری, بالابر 16 متری, بالابر 17 متری, کرایه بالابر, بالابر ساختمانی, بالابر صنعتی, نماکاری با بالابر">
+    <meta name="author" content="شرکت بالابر داریوش">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="بالابر داریوش اصفهان | اجاره بالابر حرفه‌ای">
+    <meta property="og:description" content="اجاره بالابر 15، 16، 17 متری در اصفهان - خدمات تخصصی بالابر برای پروژه‌های ساختمانی و صنعتی">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://defaultslabattr.github.io/ballabar/">
+    
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "شرکت بالابر داریوش",
+        "description": "خدمات اجاره بالابر در اصفهان و حومه",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "اصفهان",
+            "addressCountry": "IR"
+        },
+        "telephone": "+98-913-107-3110",
+        "openingHours": "Mo-Su 08:00-20:00",
+        "serviceType": "اجاره بالابر",
+        "areaServed": "اصفهان و حومه"
+    }
+    </script>
+
     <style>
         :root {
             --primary-red: #d32f2f;
@@ -13,7 +43,9 @@
             --light-red: #ff6659;
             --white: #ffffff;
             --light-gray: #f5f5f5;
+            --medium-gray: #e0e0e0;
             --dark-gray: #424242;
+            --gold: #ffd700;
         }
         
         * {
@@ -26,7 +58,8 @@
         body {
             background-color: var(--white);
             color: var(--dark-gray);
-            line-height: 1.6;
+            line-height: 1.8;
+            font-size: 16px;
         }
         
         .container {
@@ -36,12 +69,14 @@
             padding: 0 15px;
         }
         
+        /* Header Styles */
         header {
-            background-color: var(--white);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-bottom: 3px solid var(--primary-red);
         }
         
         .header-content {
@@ -54,373 +89,872 @@
         .logo {
             display: flex;
             align-items: center;
+            gap: 15px;
         }
         
-        .logo h1 {
+        .logo-icon {
+            font-size: 2.5rem;
             color: var(--primary-red);
-            font-size: 1.8rem;
-            margin-right: 10px;
         }
         
-        .logo span {
+        .logo-text h1 {
+            color: var(--primary-red);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+        
+        .logo-text .tagline {
             color: var(--dark-gray);
+            font-size: 0.9rem;
+            font-weight: 500;
         }
         
         nav ul {
             display: flex;
             list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 25px;
+            gap: 30px;
         }
         
         nav ul li a {
             text-decoration: none;
             color: var(--dark-gray);
-            font-weight: 500;
-            transition: color 0.3s;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
         }
         
         nav ul li a:hover {
             color: var(--primary-red);
+            background: rgba(211, 47, 47, 0.1);
+            transform: translateY(-2px);
         }
         
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--primary-red);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        
+        nav ul li a:hover::after {
+            width: 80%;
+        }
+        
+        /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1576675466969-38eeae4b41f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1576675466969-38eeae4b41f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: var(--white);
             text-align: center;
-            padding: 100px 0;
+            padding: 150px 0;
+            position: relative;
+            overflow: hidden;
         }
         
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(211, 47, 47, 0.3), rgba(183, 28, 28, 0.3));
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 25px;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
         }
         
         .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
         
         .btn {
             display: inline-block;
-            background-color: var(--primary-red);
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
             color: var(--white);
-            padding: 12px 30px;
-            border-radius: 5px;
+            padding: 18px 45px;
+            border-radius: 50px;
             text-decoration: none;
-            font-weight: 600;
-            transition: background-color 0.3s;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 8px 25px rgba(211, 47, 47, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: all 0.6s ease;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
         }
         
         .btn:hover {
-            background-color: var(--dark-red);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(211, 47, 47, 0.4);
         }
         
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid var(--white);
+            margin-right: 20px;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-red);
+        }
+        
+        /* Services Section */
         .services {
-            padding: 80px 0;
-            background-color: var(--light-gray);
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--light-gray) 0%, var(--white) 100%);
+            position: relative;
         }
         
         .section-title {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 70px;
         }
         
         .section-title h2 {
-            font-size: 2rem;
+            font-size: 2.8rem;
             color: var(--primary-red);
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-weight: 700;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-red), var(--gold));
+            border-radius: 2px;
         }
         
         .section-title p {
             color: var(--dark-gray);
             max-width: 700px;
             margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
         }
         
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
         }
         
         .service-card {
-            background-color: var(--white);
-            border-radius: 8px;
+            background: var(--white);
+            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            border: 1px solid var(--medium-gray);
         }
         
         .service-card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-15px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-red), var(--gold));
+            z-index: 2;
         }
         
         .service-img {
-            height: 200px;
+            height: 250px;
             background-color: #ddd;
             background-size: cover;
             background-position: center;
+            position: relative;
+        }
+        
+        .service-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(211, 47, 47, 0.8), rgba(183, 28, 28, 0.8));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover .service-overlay {
+            opacity: 1;
+        }
+        
+        .service-price {
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: 700;
         }
         
         .service-content {
-            padding: 20px;
+            padding: 30px;
         }
         
         .service-content h3 {
             color: var(--primary-red);
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+            font-weight: 700;
         }
         
-        .contact {
+        .service-features {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .service-features li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--medium-gray);
+            position: relative;
+            padding-right: 25px;
+        }
+        
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            right: 0;
+            color: var(--primary-red);
+            font-weight: bold;
+        }
+        
+        /* SEO Content Section */
+        .seo-content {
             padding: 80px 0;
+            background: var(--white);
+        }
+        
+        .seo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+        
+        .seo-text h2 {
+            color: var(--primary-red);
+            font-size: 2.2rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .seo-text h3 {
+            color: var(--dark-gray);
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+            font-weight: 600;
+        }
+        
+        .seo-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        
+        .seo-list {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 15px;
+            border-right: 5px solid var(--primary-red);
+        }
+        
+        .seo-list h4 {
+            color: var(--primary-red);
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        
+        .seo-list ul {
+            list-style: none;
+        }
+        
+        .seo-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--medium-gray);
+            font-weight: 500;
+        }
+        
+        .seo-list li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--dark-red) 100%);
+            color: var(--white);
         }
         
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
         }
         
         .contact-info h3 {
-            color: var(--primary-red);
-            margin-bottom: 20px;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            font-weight: 700;
         }
         
         .contact-info p {
-            margin-bottom: 15px;
+            margin-bottom: 25px;
             display: flex;
             align-items: center;
+            font-size: 1.1rem;
         }
         
         .contact-info i {
-            margin-left: 10px;
-            color: var(--primary-red);
+            margin-left: 15px;
+            font-size: 1.3rem;
+            width: 30px;
+            text-align: center;
         }
         
         .phone-number {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: var(--dark-red);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--gold);
+            direction: ltr;
+            text-align: right;
         }
         
+        .working-hours {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .working-hours h4 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        
+        /* Reservation Form */
         .reservation-form {
-            background-color: var(--light-gray);
-            padding: 30px;
-            border-radius: 8px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+        }
+        
+        .reservation-form h3 {
+            color: var(--primary-red);
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-align: center;
         }
         
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         
         .form-group label {
             display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--dark-gray);
         }
         
         .form-control {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            padding: 15px 20px;
+            border: 2px solid var(--medium-gray);
+            border-radius: 12px;
             font-size: 1rem;
+            transition: all 0.3s ease;
+            background: var(--light-gray);
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-red);
+            background: var(--white);
+            box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.1);
         }
         
         textarea.form-control {
-            min-height: 120px;
+            min-height: 140px;
             resize: vertical;
         }
         
+        /* Footer */
         footer {
-            background-color: var(--dark-gray);
+            background: linear-gradient(135deg, var(--dark-gray) 0%, #2c2c2c 100%);
             color: var(--white);
-            padding: 40px 0 20px;
+            padding: 60px 0 20px;
         }
         
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
         }
         
         .footer-section h3 {
             color: var(--primary-red);
-            margin-bottom: 20px;
-            font-size: 1.3rem;
+            margin-bottom: 25px;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        
+        .footer-section p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer-links a:hover {
+            color: var(--gold);
+            transform: translateX(5px);
+        }
+        
+        .footer-links a::before {
+            content: '›';
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .footer-links a:hover::before {
+            transform: translateX(3px);
         }
         
         .footer-bottom {
             text-align: center;
-            padding-top: 20px;
+            padding-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
         }
         
+        /* Responsive */
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
+                gap: 20px;
             }
             
             nav ul {
-                margin-top: 15px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
             }
             
-            nav ul li {
-                margin: 0 10px;
+            .hero h1 {
+                font-size: 2.5rem;
             }
             
-            .hero h2 {
-                font-size: 2rem;
+            .services-grid {
+                grid-template-columns: 1fr;
             }
+            
+            .seo-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .btn {
+                padding: 15px 30px;
+                font-size: 1rem;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+        
+        /* Trust Badges */
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 50px 0;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            min-width: 150px;
+            border: 2px solid var(--primary-red);
+        }
+        
+        .badge i {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+            margin-bottom: 10px;
+        }
+        
+        .badge-text {
+            font-weight: 600;
+            color: var(--dark-gray);
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h1>بالابر <span>داریوش</span></h1>
+                    <div class="logo-icon">🚀</div>
+                    <div class="logo-text">
+                        <h1>بالابر داریوش</h1>
+                        <div class="tagline">خدمات تخصصی اجاره بالابر در اصفهان</div>
+                    </div>
                 </div>
                 <nav>
                     <ul>
                         <li><a href="#home">خانه</a></li>
-                        <li><a href="#services">خدمات</a></li>
+                        <li><a href="#services">خدمات بالابر</a></li>
+                        <li><a href="#about">درباره ما</a></li>
                         <li><a href="#contact">تماس با ما</a></li>
-                        <li><a href="#reservation">رزرو بالابر</a></li>
+                        <li><a href="#reservation">رزرو آنلاین</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
-            <h2>اجاره بالابر در اصفهان و حومه</h2>
-            <p>شرکت بالابر داریوش با بیش از 10 سال سابقه در زمینه ارائه خدمات اجاره بالابر با ارتفاع‌های مختلف در سراسر اصفهان و حومه</p>
-            <a href="#reservation" class="btn">رزرو آنلاین</a>
+            <div class="hero-content fade-in">
+                <h1>بالابر داریوش اصفهان - خدمات حرفه‌ای اجاره بالابر</h1>
+                <p>اجاره بالابر 15، 16 و 17 متری با بهترین کیفیت و مناسب‌ترین قیمت در اصفهان و حومه</p>
+                <div class="hero-buttons">
+                    <a href="#reservation" class="btn btn-secondary">رزرو فوری بالابر</a>
+                    <a href="#contact" class="btn">تماس با ما</a>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Trust Badges -->
+    <div class="container">
+        <div class="trust-badges">
+            <div class="badge">
+                <div>✅</div>
+                <div class="badge-text">10+ سال تجربه</div>
+            </div>
+            <div class="badge">
+                <div>🚛</div>
+                <div class="badge-text">ناوگان مدرن</div>
+            </div>
+            <div class="badge">
+                <div>⏰</div>
+                <div class="badge-text">پاسخگویی 24/7</div>
+            </div>
+            <div class="badge">
+                <div>💰</div>
+                <div class="badge-text">قیمت مناسب</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-title">
-                <section class="seo-content" style="padding: 50px 0; background: white;">
-    <div class="container">
-        <h2>بالابر داریوش اصفهان - خدمات اجاره بالابر</h2>
-        <p>شرکت <strong>بالابر داریوش</strong> با سال‌ها تجربه در زمینه <strong>اجاره بالابر</strong> در <strong>اصفهان</strong> آماده ارائه خدمات به شما عزیزان می‌باشد. ما با دارا بودن ناوگان مجهز از <strong>بالابر 15 متری</strong>، <strong>بالابر 16 متری</strong> و <strong>بالابر 17 متری</strong> قادر به انجام کلیه پروژه‌های ساختمانی، صنعتی و خدماتی هستیم.</p>
-        
-        <h3>خدمات بالابر داریوش در اصفهان:</h3>
-        <ul>
-            <li>اجاره بالابر برای پروژه‌های ساختمانی</li>
-            <li>نصب و تعمیر تابلوهای تبلیغاتی</li>
-            <li>هرس درختان و فضای سبز</li>
-            <li>نماشویی و نماکاری ساختمان</li>
-            <li>سیم‌کشی و تعمیرات روشنایی</li>
-        </ul>
-    </div>
-</section>
-                                <h2>خدمات ما</h2>
-                <p>شرکت بالابر داریوش با دارا بودن ناوگان مدرن و مجهز، آماده ارائه خدمات در سراسر اصفهان و حومه می‌باشد</p>
+                <h2>خدمات بالابر داریوش</h2>
+                <p>با بیش از 10 سال سابقه درخشان در زمینه ارائه خدمات اجاره بالابر در اصفهان و حومه</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1591382386627-349b692688ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                <div class="service-card fade-in">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1591382386627-349b692688ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                        <div class="service-overlay">
+                            <div class="service-price">استعلام قیمت</div>
+                        </div>
+                    </div>
                     <div class="service-content">
                         <h3>بالابر 15 متری</h3>
-                        <p>مناسب برای کارهای با ارتفاع متوسط، نصب تابلو، تعمیرات ساختمان، هرس درختان و...</p>
+                        <p>مناسب برای کارهای با ارتفاع متوسط در پروژه‌های ساختمانی و خدماتی</p>
+                        <ul class="service-features">
+                            <li>نصب تابلوهای تبلیغاتی</li>
+                            <li>هرس درختان بلند</li>
+                            <li>تعمیرات ساختمان</li>
+                            <li>نماشویی ساختمان‌های کوتاه</li>
+                            <li>سیم‌کشی و روشنایی</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                        <div class="service-overlay">
+                            <div class="service-price">استعلام قیمت</div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>بالابر 16 متری</h3>
+                        <p>ایده‌آل برای پروژه‌های نیمه‌صنعتی و ساختمانی پیشرفته</p>
+                        <ul class="service-features">
+                            <li>پروژه‌های ساختمانی بلند</li>
+                            <li>نصب سیستم‌های روشنایی</li>
+                            <li>تعمیرات نماهای بلند</li>
+                            <li>پروژه‌های صنعتی</li>
+                            <li>خدمات ویژه شهرداری</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card fade-in">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+                        <div class="service-overlay">
+                            <div class="service-price">استعلام قیمت</div>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <h3>بالابر 17 متری</h3>
+                        <p>حرفه‌ای‌ترین خدمات برای ارتفاعات بالا و پروژه‌های خاص</p>
+                        <ul class="service-features">
+                            <li>پروژه‌های صنعتی بزرگ</li>
+                            <li>ساختمان‌های بسیار بلند</li>
+                            <li>پروژه‌های ویژه</li>
+                            <li>خدمات اضطراری</li>
+                            <li>پروژه‌های دولتی</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- SEO Content Section -->
+    <section class="seo-content" id="about">
+        <div class="container">
+            <div class="seo-grid">
+                <div class="seo-text">
+                    <h2>بالابر داریوش - پیشرو در خدمات اجاره بالابر اصفهان</h2>
+                    <p><strong>شرکت بالابر داریوش</strong> با بیش از یک دهه تجربه موفق در زمینه <strong>اجاره بالابر در اصفهان</strong>، آماده ارائه خدمات تخصصی به صنعتگران، ساختمان‌سازان و شهروندان عزیز اصفهانی می‌باشد.</p>
+                    
+                    <h3>چرا بالابر داریوش را انتخاب کنید؟</h3>
+                    <p>ما در <strong>بالابر داریوش</strong> با دارا بودن ناوگان مدرن و مجهز از <strong>بالابر 15 متری</strong>، <strong>بالابر 16 متری</strong> و <strong>بالابر 17 متری</strong>، قادر به انجام کلیه پروژه‌های ساختمانی، صنعتی و خدماتی با بالاترین استانداردهای ایمنی هستیم.</p>
+                    
+                    <h3>خدمات تخصصی بالابر داریوش در اصفهان</h3>
+                    <p>خدمات ما شامل <strong>اجاره بالابر برای پروژه‌های ساختمانی</strong>، <strong>نصب و تعمیر تابلوهای تبلیغاتی</strong>، <strong>هرس درختان و فضای سبز</strong>، <strong>نماشویی و نماکاری ساختمان</strong>، <strong>سیم‌کشی و تعمیرات روشنایی</strong> و سایر خدمات تخصصی می‌باشد.</p>
+                </div>
+                
+                <div class="seo-list">
+                    <h4>مزایای انتخاب بالابر داریوش</h4>
+                    <ul>
+                        <li>✅ بیش از 10 سال سابقه درخشان</li>
+                        <li>✅ ناوگان مدرن و به‌روز</li>
+                        <li>✅ پرسنل مجرب و متخصص</li>
+                        <li>✅ خدمات 24 ساعته</li>
+                        <li>✅ پوشش کامل اصفهان و حومه</li>
+                        <li>✅ مناسب‌ترین قیمت‌ها</li>
+                        <li>✅ رعایت کامل ایمنی</li>
+                        <li>✅ پشتیبانی و گارانتی خدمات</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Reservation Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-title">
-                <h2>تماس با ما</h2>
-                <p>برای دریافت اطلاعات بیشتر و رزرو بالابر با ما در تماس باشید</p>
-            </div>
             <div class="contact-grid">
                 <div class="contact-info">
-                    <h3>اطلاعات تماس</h3>
-                    <p><i>📍</i> اصفهان و حومه</p>
+                    <h3>تماس با بالابر داریوش</h3>
+                    <p><i>📍</i> <strong>منطقه خدمات‌دهی:</strong> اصفهان و کلیه شهرستان‌های حومه</p>
                     <p class="phone-number"><i>📞</i> 09131073110</p>
                     <p class="phone-number"><i>📞</i> 09902211659</p>
                     <p><i>✉️</i> takshahrdariush@gmail.com</p>
-                    <p>ما در تمام روزهای هفته از ساعت 6 صبح تا 8 شب آماده خدمت‌رسانی به شما عزیزان هستیم.</p>
+                    
+                    <div class="working-hours">
+                        <h4>ساعات کاری</h4>
+                        <p>همه روزه از ساعت 8:00 صبح تا 20:00 شب</p>
+                        <p>پاسخگویی 24 ساعته برای پروژه‌های اضطراری</p>
+                    </div>
                 </div>
+                
                 <div class="reservation-form" id="reservation">
                     <h3>فرم رزرو بالابر</h3>
                     <form id="reservationForm">
                         <div class="form-group">
-                            <label for="name">نام و نام خانوادگی</label>
-                            <input type="text" id="name" class="form-control" required>
+                            <label for="name">نام و نام خانوادگی *</label>
+                            <input type="text" id="name" class="form-control" required placeholder="نام کامل خود را وارد کنید">
                         </div>
+                        
                         <div class="form-group">
-                            <label for="email">ایمیل</label>
-                            <input type="email" id="email" class="form-control" required>
+                            <label for="phone">شماره تماس *</label>
+                            <input type="tel" id="phone" class="form-control" required placeholder="09xxxxxxxxx">
                         </div>
+                        
                         <div class="form-group">
-                            <label for="phone">شماره تماس</label>
-                            <input type="tel" id="phone" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="elevator-type">نوع بالابر</label>
+                            <label for="elevator-type">نوع بالابر مورد نیاز *</label>
                             <select id="elevator-type" class="form-control" required>
-                                <option value="">انتخاب کنید</option>
+                                <option value="">-- انتخاب کنید --</option>
                                 <option value="15m">بالابر 15 متری</option>
                                 <option value="16m">بالابر 16 متری</option>
-                                <option value="17m">بالابر 18 متری</option>
+                                <option value="17m">بالابر 17 متری</option>
+                                <option value="consult">مشاوره رایگان</option>
                             </select>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="date">تاریخ مورد نیاز</label>
+                            <label for="date">تاریخ مورد نیاز *</label>
                             <input type="date" id="date" class="form-control" required>
                         </div>
+                        
                         <div class="form-group">
-                            <label for="address">آدرس دقیق محل پروژه</label>
-                            <textarea id="address" class="form-control" required></textarea>
+                            <label for="address">آدرس دقیق محل پروژه *</label>
+                            <textarea id="address" class="form-control" required placeholder="آدرس کامل شامل محله، خیابان، پلاک و ..."></textarea>
                         </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type">نوع پروژه</label>
+                            <select id="project-type" class="form-control">
+                                <option value="">-- انتخاب کنید --</option>
+                                <option value="construction">ساختمانی</option>
+                                <option value="industrial">صنعتی</option>
+                                <option value="maintenance">تعمیراتی</option>
+                                <option value="advertising">تبلیغاتی</option>
+                                <option value="other">سایر</option>
+                            </select>
+                        </div>
+                        
                         <div class="form-group">
                             <label for="message">توضیحات اضافی</label>
-                            <textarea id="message" class="form-control"></textarea>
+                            <textarea id="message" class="form-control" placeholder="توضیحات بیشتر درباره پروژه..."></textarea>
                         </div>
-                        <button type="submit" class="btn">ارسال درخواست</button>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">ثبت درخواست و دریافت مشاوره رایگان</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>درباره ما</h3>
-                    <p>شرکت بالابر داریوش با سال‌ها تجربه در زمینه اجاره بالابر، آماده ارائه خدمات با کیفیت در اصفهان و حومه می‌باشد.</p>
+                    <h3>درباره بالابر داریوش</h3>
+                    <p>شرکت بالابر داریوش با سال‌ها تجربه در زمینه اجاره بالابر، آماده ارائه خدمات با کیفیت در اصفهان و حومه می‌باشد. ما با تعهد به کیفیت و ایمنی، همراه مطمئن پروژه‌های شما هستیم.</p>
                 </div>
+                
                 <div class="footer-section">
-                    <h3>لینک‌های مفید</h3>
-                    <ul style="list-style: none;">
-                        <li><a href="#home" style="color: #fff; text-decoration: none;">خانه</a></li>
-                        <li><a href="#services" style="color: #fff; text-decoration: none;">خدمات</a></li>
-                        <li><a href="#contact" style="color: #fff; text-decoration: none;">تماس با ما</a></li>
+                    <h3>لینک‌های سریع</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">صفحه اصلی</a></li>
+                        <li><a href="#services">خدمات بالابر</a></li>
+                        <li><a href="#about">درباره ما</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                        <li><a href="#reservation">رزرو آنلاین</a></li>
                     </ul>
                 </div>
+                
                 <div class="footer-section">
-                    <h3>تماس با ما</h3>
-                    <p>اصفهان و حومه</p>
-                    <p>09131073110 - 09902211659</p>
-                    <p>takshahrdariush@gmail.com</p>
+                    <h3>اطلاعات تماس</h3>
+                    <p><strong>اصفهان و حومه</strong></p>
+                    <p>تلفن: 09131073110 - 09902211659</p>
+                    <p>ایمیل: takshahrdariush@gmail.com</p>
+                    <p>ساعات کاری: 8:00 صبح تا 20:00 شب</p>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>کلیه حقوق این وبسایت متعلق به شرکت بالابر داریوش می‌باشد.</p>
+                <p>کلیه حقوق مادی و معنوی این وبسایت متعلق به شرکت بالابر داریوش می‌باشد. © 2024</p>
             </div>
         </div>
     </footer>
@@ -431,17 +965,36 @@
             
             const formData = {
                 name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
                 phone: document.getElementById('phone').value,
                 elevatorType: document.getElementById('elevator-type').value,
                 date: document.getElementById('date').value,
                 address: document.getElementById('address').value,
+                projectType: document.getElementById('project-type').value,
                 message: document.getElementById('message').value
             };
             
-            alert('درخواست شما با موفقیت ثبت شد. به زودی با شما تماس خواهیم گرفت.');
+            alert('درخواست شما با موفقیت ثبت شد. کارشناسان ما به زودی با شما تماس خواهند گرفت.');
             
             document.getElementById('reservationForm').reset();
+        });
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            observer.observe(card);
         });
     </script>
 </body>
