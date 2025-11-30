@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- کد تأیید گوگل -->
+    <meta name="google-site-verification" content="69naEp_T5UkZI-2AkxaydMyai5SJo3rIplR5TLYi8Co" />
+    <title>شرکت بالابر داریوش - اجاره بالابر در اصفهان</title>
+    <style>
+        :root {
+            --primary-red: #d32f2f;
+            --dark-red: #b71c1c;
+            --light-red: #ff6659;
+            --white: #ffffff;
+            --light-gray: #f5f5f5;
+            --dark-gray: #424242;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--white);
+            color: var(--dark-gray);
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            color: var(--primary-red);
+            font-size: 1.8rem;
+            margin-right: 10px;
+        }
+        
+        .logo span {
+            color: var(--dark-gray);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark-gray);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary-red);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1576675466969-38eeae4b41f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 0;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-red);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--dark-red);
+        }
+        
+        .services {
+            padding: 80px 0;
+            background-color: var(--light-gray);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary-red);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--dark-gray);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-img {
+            height: 200px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-content h3 {
+            color: var(--primary-red);
+            margin-bottom: 10px;
+        }
+        
+        .contact {
+            padding: 80px 0;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        
+        .contact-info h3 {
+            color: var(--primary-red);
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info i {
+            margin-left: 10px;
+            color: var(--primary-red);
+        }
+        
+        .phone-number {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark-red);
+        }
+        
+        .reservation-form {
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        footer {
+            background-color: var(--dark-gray);
+            color: var(--white);
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h3 {
+            color: var(--primary-red);
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>بالابر <span>داریوش</span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">خانه</a></li>
+                        <li><a href="#services">خدمات</a></li>
+                        <li><a href="#contact">تماس با ما</a></li>
+                        <li><a href="#reservation">رزرو بالابر</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>اجاره بالابر در اصفهان و حومه</h2>
+            <p>شرکت بالابر داریوش با بیش از 10 سال سابقه در زمینه ارائه خدمات اجاره بالابر با ارتفاع‌های مختلف در سراسر اصفهان و حومه</p>
+            <a href="#reservation" class="btn">رزرو آنلاین</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>خدمات ما</h2>
+                <p>شرکت بالابر داریوش با دارا بودن ناوگان مدرن و مجهز، آماده ارائه خدمات در سراسر اصفهان و حومه می‌باشد</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1591382386627-349b692688ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <h3>بالابر 15 متری</h3>
+                        <p>مناسب برای کارهای با ارتفاع متوسط، نصب تابلو، تعمیرات ساختمان، هرس درختان و...</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <h3>بالابر 16 متری</h3>
+                        <p>ایده‌آل برای پروژه‌های ساختمانی، نصب و تعمیر سیستم‌های روشنایی، نمای ساختمان و...</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <h3>بالابر 18 متری</h3>
+                        <p>مناسب برای کار در ارتفاعات بالاتر، پروژه‌های صنعتی، سیم کشی و...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>تماس با ما</h2>
+                <p>برای دریافت اطلاعات بیشتر و رزرو بالابر با ما در تماس باشید</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>اطلاعات تماس</h3>
+                    <p><i>📍</i> اصفهان و حومه</p>
+                    <p class="phone-number"><i>📞</i> 09131073110</p>
+                    <p class="phone-number"><i>📞</i> 09902211659</p>
+                    <p><i>✉️</i> takshahrdariush@gmail.com</p>
+                    <p>ما در تمام روزهای هفته از ساعت 6 صبح تا 8 شب آماده خدمت‌رسانی به شما عزیزان هستیم.</p>
+                </div>
+                <div class="reservation-form" id="reservation">
+                    <h3>فرم رزرو بالابر</h3>
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="name">نام و نام خانوادگی</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ایمیل</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">شماره تماس</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="elevator-type">نوع بالابر</label>
+                            <select id="elevator-type" class="form-control" required>
+                                <option value="">انتخاب کنید</option>
+                                <option value="15m">بالابر 15 متری</option>
+                                <option value="16m">بالابر 16 متری</option>
+                                <option value="17m">بالابر 18 متری</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">تاریخ مورد نیاز</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">آدرس دقیق محل پروژه</label>
+                            <textarea id="address" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">توضیحات اضافی</label>
+                            <textarea id="message" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn">ارسال درخواست</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>درباره ما</h3>
+                    <p>شرکت بالابر داریوش با سال‌ها تجربه در زمینه اجاره بالابر، آماده ارائه خدمات با کیفیت در اصفهان و حومه می‌باشد.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>لینک‌های مفید</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="#home" style="color: #fff; text-decoration: none;">خانه</a></li>
+                        <li><a href="#services" style="color: #fff; text-decoration: none;">خدمات</a></li>
+                        <li><a href="#contact" style="color: #fff; text-decoration: none;">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تماس با ما</h3>
+                    <p>اصفهان و حومه</p>
+                    <p>09131073110 - 09902211659</p>
+                    <p>takshahrdariush@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>کلیه حقوق این وبسایت متعلق به شرکت بالابر داریوش می‌باشد.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                elevatorType: document.getElementById('elevator-type').value,
+                date: document.getElementById('date').value,
+                address: document.getElementById('address').value,
+                message: document.getElementById('message').value
+            };
+            
+            alert('درخواست شما با موفقیت ثبت شد. به زودی با شما تماس خواهیم گرفت.');
+            
+            document.getElementById('reservationForm').reset();
+        });
+    </script>
+</body>
+</html>
